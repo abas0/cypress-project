@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ main ]
+    
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    #node version
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+    
+    steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v2.1.2
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - uses: actions/checkout@v2
+      
+    - run: npm install
+    
+    - run: npm run cy:run
+    
+    - run: npm run report:merfe
+    
+    - run: npm run report:mocha
+    
+    - name: Deploy to Github
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: mochawesome-report
