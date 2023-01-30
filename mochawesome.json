@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-27T13:38:42.179Z",
-    "end": "2023-01-27T13:38:49.597Z",
-    "duration": 7418,
+    "start": "2023-01-30T17:02:19.847Z",
+    "end": "2023-01-30T17:02:27.048Z",
+    "duration": 7201,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e2bfebb6-c77b-4523-9ac7-519086e4873b",
+      "uuid": "2d2eee2b-1e55-4ace-aae4-b7a0116cd65f",
       "title": "",
       "fullFile": "cypress/e2e/fillOutForm.cy.js",
       "file": "cypress/e2e/fillOutForm.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "04517892-0545-4188-bfc6-2a2843d29cae",
+          "uuid": "1c1bccf6-903d-4f93-9873-9d0143105aa4",
           "title": "fillOutForm",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Register",
               "fullTitle": "fillOutForm Register",
               "timedOut": null,
-              "duration": 5161,
+              "duration": 4794,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://phptravels.com/demo/');\ncy.get(\"input[name = 'first_name']\").type('João', {\n  force: true\n});\ncy.get(\"input[name = 'last_name']\").type('da Silva', {\n  force: true\n});\ncy.get(\"input[name = 'business_name']\").type('João da Silva', {\n  force: true\n});\ncy.get(\"input[name = 'email']\").type(\"a@gmail.com\", {\n  force: true\n});\ncy.get(\"#numb1\").invoke('text').then(number1 => {\n  cy.get(\"#numb2\").invoke('text').then(number2 => {\n    var result = parseInt(number1) + parseInt(number2);\n    cy.get(\"#number\").type(result, {\n      force: true\n    });\n  });\n});\ncy.get('#demo').click({\n  force: true\n});\ncy.contains('Thank you!').should('be.visible');",
               "err": {},
-              "uuid": "601e9406-b3bb-4cb6-9b61-3fbf35bc20e0",
-              "parentUUID": "04517892-0545-4188-bfc6-2a2843d29cae",
+              "uuid": "f9e6e6b6-9ea1-43de-af9e-5c67466079aa",
+              "parentUUID": "1c1bccf6-903d-4f93-9873-9d0143105aa4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "601e9406-b3bb-4cb6-9b61-3fbf35bc20e0"
+            "f9e6e6b6-9ea1-43de-af9e-5c67466079aa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5161,
+          "duration": 4794,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
