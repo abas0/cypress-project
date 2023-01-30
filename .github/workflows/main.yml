@@ -25,7 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     
     - uses: actions/checkout@v2
-    - run: chown -R 1001:1001 /github/home/.cache && echo "pwn dat cache"
+    #- run: chown -R 1001:1001 /github/home/.cache && echo "pwn dat cache"
     - run: npm init -y
     - run: npm i -g npm@latest
     - run: npm install
