@@ -26,6 +26,7 @@ jobs:
     
     - uses: actions/checkout@v2
       
+    - run: npm list bufferutil  
     - run: npm install
     
     - run: npm run cy:run
