@@ -7,7 +7,8 @@
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
     "report:clean": "rimraf mochawesome-report index.json",
-    "cy:run": "npx cypress run"
+    "cy:run": "npx cypress run",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "",
   "license": "ISC",
@@ -177,5 +178,8 @@
     "yallist": "^4.0.0",
     "yauzl": "^2.10.0"
   },
-  "description": ""
+  "description": "",
+  "resolutions": {
+    "node-sass": "https://registry.npmjs.org/node-sass/-/node-sass-7.0.0.tgz"
+  }
 }
