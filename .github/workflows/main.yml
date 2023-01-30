@@ -16,7 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [^14.17.0 || ^16.13.0 || >=18.0.0]
     
     steps:
     - name: Setup Node.js
