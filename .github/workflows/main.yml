@@ -16,7 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [^14.17.0 || ^16.13.0 || >=18.0.0]
     
     steps:
     - name: Setup Node.js
@@ -26,6 +26,8 @@ jobs:
     
     - uses: actions/checkout@v2
       
+    - run: npm init -y
+    - run: npm i -g npm@latest
     - run: npm install
     
     - run: npm run cy:run
