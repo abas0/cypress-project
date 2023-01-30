@@ -31,6 +31,7 @@ jobs:
     - run: npm i -g npm@latest
     - run: npm install
     - run: npm install cypress --save-dev
+    - run: npm install -D rimraf 
     
     - run: npm run cy:run
       continue-on-error: true
