@@ -9,3 +9,5 @@ mochawesome-report
 index.json
 
 .DS_Store
+
+items.json

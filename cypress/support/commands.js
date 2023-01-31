@@ -23,26 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import faker from '@faker-js/faker'
 
 Cypress.Commands.add("access", () => {
     cy.visit("http://automationpractice.com/index.php")
 })
 
-Cypress.Commands.add("createOng", () => {
-    cy.request({
-        method: 'POST',
-        url: 'http://localhost:3333/ongs',
-        body: {
-            name: "Gatos queridos",
-            email: "gatos@mail.com",
-            whatsapp: "519999999999",
-            city: "Porto Alegre",
-            uf: "RS"    
-        }
-    }).then(response => {
-        expect(response.body.id).is.not.null;
-        cy.log(response.body.id);
+Cypress.Commands.add('generateFixture', () => {
+    const { faker } = require('@faker-js/faker');
 
-        Cypress.env('createdOngId', response.body.id);
-    });
+    cy.writeFile('cypress/fixtures/items.json', {
+            'name': `${faker.name.firstName()}`,
+            'lastName': `${faker.name.lastName()}`,
+            'businessName':  `${faker.name.firstName()} ${faker.name.lastName()}`,
+            'email': `${faker.internet.email()}`
+    })
 })
+   

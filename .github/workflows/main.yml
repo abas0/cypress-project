@@ -16,17 +16,22 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [^14.17.0]
     
     steps:
     - name: Setup Node.js
-      uses: actions/setup-node@v2.1.2
+      uses: actions/setup-node@v3.6.0
       with:
         node-version: ${{ matrix.node-version }}
     
     - uses: actions/checkout@v2
-      
+    #- run: chown -R 1001:1001 /github/home/.cache && echo "pwn dat cache"
+    - run: npm cache clean --force
+    - run: npm init -y
+    - run: npm i -g npm@latest
     - run: npm install
+    - run: npm install cypress --save-dev
+    - run: npm install -D rimraf 
     
     - run: npm run cy:run
       continue-on-error: true
