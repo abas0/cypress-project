@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 6,
-    "start": "2023-08-02T12:56:25.064Z",
-    "end": "2023-08-02T12:56:39.741Z",
-    "duration": 14677,
+    "start": "2023-08-02T13:19:49.115Z",
+    "end": "2023-08-02T13:20:06.134Z",
+    "duration": 17019,
     "testsRegistered": 6,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "55d82aa3-8cda-4ae1-b11b-870dea9e5880",
+      "uuid": "7ad5f9c9-b190-4337-868a-4c664566b4ec",
       "title": "",
       "fullFile": "cypress/e2e/Form.cy.js",
       "file": "cypress/e2e/Form.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70fd59b4-1892-4746-a28f-b1c8af356863",
+          "uuid": "3cb08faf-c0d0-45fb-a9c3-74019b75f17d",
           "title": "User page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Register",
               "fullTitle": "User page Register",
               "timedOut": null,
-              "duration": 4398,
+              "duration": 4854,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:23:13)",
                 "diff": null
               },
-              "uuid": "15cd9c06-ad29-4b8f-b16b-ab16c644ba4c",
-              "parentUUID": "70fd59b4-1892-4746-a28f-b1c8af356863",
+              "uuid": "2ff99990-f8cf-41fe-bfed-36ab1dca207a",
+              "parentUUID": "3cb08faf-c0d0-45fb-a9c3-74019b75f17d",
               "isHook": false,
               "skipped": false
             }
@@ -60,17 +60,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "15cd9c06-ad29-4b8f-b16b-ab16c644ba4c"
+            "2ff99990-f8cf-41fe-bfed-36ab1dca207a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4398,
+          "duration": 4854,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "661de42c-7114-456c-8fc3-0af266512023",
+          "uuid": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
           "title": "mandatory fields",
           "fullFile": "",
           "file": "",
@@ -81,7 +81,7 @@
               "title": "do not fill in the name field",
               "fullTitle": "mandatory fields do not fill in the name field",
               "timedOut": null,
-              "duration": 2012,
+              "duration": 2080,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -94,8 +94,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:31:13)",
                 "diff": null
               },
-              "uuid": "9bd1cc64-3f28-4dcf-b27f-cc70967a7ec0",
-              "parentUUID": "661de42c-7114-456c-8fc3-0af266512023",
+              "uuid": "82de4c7f-fd7d-4a4e-bcc6-1094301f5e25",
+              "parentUUID": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
               "isHook": false,
               "skipped": false
             },
@@ -103,7 +103,7 @@
               "title": "do not fill in the last name field",
               "fullTitle": "mandatory fields do not fill in the last name field",
               "timedOut": null,
-              "duration": 1814,
+              "duration": 2433,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -116,8 +116,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:37:13)",
                 "diff": null
               },
-              "uuid": "fc81c196-a437-4eb9-b0f8-824b22e94844",
-              "parentUUID": "661de42c-7114-456c-8fc3-0af266512023",
+              "uuid": "38c049b5-b8de-4a77-98a3-9700c68d773d",
+              "parentUUID": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
               "isHook": false,
               "skipped": false
             },
@@ -125,7 +125,7 @@
               "title": "do not fill in the business name field",
               "fullTitle": "mandatory fields do not fill in the business name field",
               "timedOut": null,
-              "duration": 1897,
+              "duration": 2219,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -138,8 +138,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:43:13)",
                 "diff": null
               },
-              "uuid": "9a429d1a-de40-47c0-83c4-f19eafb5d41e",
-              "parentUUID": "661de42c-7114-456c-8fc3-0af266512023",
+              "uuid": "3de0db79-65ba-40ec-9539-630c0fe95083",
+              "parentUUID": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
               "isHook": false,
               "skipped": false
             },
@@ -147,7 +147,7 @@
               "title": "do not fill in the email field",
               "fullTitle": "mandatory fields do not fill in the email field",
               "timedOut": null,
-              "duration": 2127,
+              "duration": 2752,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -160,8 +160,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:49:13)",
                 "diff": null
               },
-              "uuid": "840ceb51-9fcc-4807-b916-f2ff4f60ccf5",
-              "parentUUID": "661de42c-7114-456c-8fc3-0af266512023",
+              "uuid": "dd212db1-28f4-4578-ab7e-3263567ae65c",
+              "parentUUID": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
               "isHook": false,
               "skipped": false
             },
@@ -169,7 +169,7 @@
               "title": "do not fill in the result field",
               "fullTitle": "mandatory fields do not fill in the result field",
               "timedOut": null,
-              "duration": 2144,
+              "duration": 2363,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -182,8 +182,8 @@
                 "estack": "CypressError: `cy.type()` can only be called on a single element. Your subject contained 2 elements.\n\nhttps://on.cypress.io/type\n    at Context.type (https://phptravels.com/__cypress/runner/cypress_runner.js:143852:76)\n    at wrapped (https://phptravels.com/__cypress/runner/cypress_runner.js:160816:19)\nFrom Your Spec Code:\n    at FormPage.fieldForm (webpack:///./cypress/support/Pages/Form/page.js:8:31)\n    at Context.eval (webpack:///./cypress/e2e/Form.cy.js:55:13)",
                 "diff": null
               },
-              "uuid": "ecdc6751-ffaf-4c07-9990-86b12444920b",
-              "parentUUID": "661de42c-7114-456c-8fc3-0af266512023",
+              "uuid": "39e53abe-fb43-4bdd-81fc-5ec510f7e4b3",
+              "parentUUID": "e26bb5ea-cb0a-4d79-a4fd-15ab0f5bee18",
               "isHook": false,
               "skipped": false
             }
@@ -191,15 +191,15 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "9bd1cc64-3f28-4dcf-b27f-cc70967a7ec0",
-            "fc81c196-a437-4eb9-b0f8-824b22e94844",
-            "9a429d1a-de40-47c0-83c4-f19eafb5d41e",
-            "840ceb51-9fcc-4807-b916-f2ff4f60ccf5",
-            "ecdc6751-ffaf-4c07-9990-86b12444920b"
+            "82de4c7f-fd7d-4a4e-bcc6-1094301f5e25",
+            "38c049b5-b8de-4a77-98a3-9700c68d773d",
+            "3de0db79-65ba-40ec-9539-630c0fe95083",
+            "dd212db1-28f4-4578-ab7e-3263567ae65c",
+            "39e53abe-fb43-4bdd-81fc-5ec510f7e4b3"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 9994,
+          "duration": 11847,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
